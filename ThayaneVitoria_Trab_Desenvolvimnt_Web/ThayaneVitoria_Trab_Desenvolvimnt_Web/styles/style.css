@@ -1,0 +1,127 @@
+body{
+    background-color: rgb(253, 225, 0);
+    color: black;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: white;
+    transition: 0.3s all;
+}
+
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color: rgb(0, 0, 0);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+img{
+    width: 580px;
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    font-family: poppinslight;
+
+}
+
+.Titulo{
+background-color: black;
+color: yellow;
+}
+
+.Tabela{
+    border-collapse: collapse;
+    display:content;
+    
+}
+
+#Trofeu{
+    width: 30px;
+}
+
+#TrofeuUEFA{
+    width: 50px;
+}
+
+#Meisterchale{
+    width: 70px;
+}
+
+#DFBPokal{
+    width: 40px;
+}
+
+#DFLSupercup{
+    width: 40px;
+}
+
+.redondo {
+    width: 350px;
+    height: 350px;
+    background-color: #000;
+    color: #FFF;
+    float: right;
+    padding: 2px;
+    margin-right: 150px;
+    margin-left: 40px;
+  
+    border-radius: 50%;
+ }
+
+ .description {
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    margin-top: 50px;
+    margin-right: 70px; 
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/fonts.css" rel="stylesheet">
+    <link href="styles/media.css" rel="stylesheet">
+    <title>Portal Borussia Dortmund</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Heja</h1>
+            <h1>BVB!</h1>
+        </div>
+
+        <ul>
+            <a href="#"><li>Início</li></a>
+            <a href="historia.html"><li>História</li></a>
+            <a href="titulos.html"><li>Títulos</li></a>
+            <a href="futebol.html"><li>Futebol</li></a>
+            <a href="muralhaamarela.html"><li>Muralha Amarela</li></a>
+            <a href="calendario.html"><li>Calendário</li></a>
+            <a href="noticias.html"><li>Classificação</li></a>
+            <a href="quemsomos.html"><li>Quem Somos</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <h2><span>Portal</span></h2> 
+            <h2>Borussia Dortmund</h2>
+            <p>
+                Ballspielverein Borussia 09 e. V. Dortmund, mais conhecido como Borussia Dortmund ou BVB, é um clube de futebol situado na Alemanha, mais precisamente no Vale do Ruhr, maior região industrial do país.
+            <p>
+                Conheça e acompanhe um dos maiores e mais tradicionais clubes do mundo!
+            </p>    
+            </p>
+        </aside>
+        <div>
+            <article class="container">
+                <img src="Image/bvb-borussia-dortmund-logo-1.png" alt="">
+            </article>
+        </div>
+    </main>
+    <script>
+        const container = document.querySelector('.container');
+        const img = document.querySelector("img");
+
+        container.addEventListener("mousemove", (e) => {
+            const x = e.clientX - e.target.offsetLeft;
+            const y = e.clientY - e.target.offsetTop;
+
+            console.log(x,y);
+
+            img.style.transformOrigin = `${x}px ${y}px`;
+            img.style.transform = "scale(1.2)"
+
+        })
+
+        container.addEventListener("mouseleave", () => {
+
+        img.style.transformOrigin = "center";
+        img.style.transform = "scale(1)"
+        })
+    </script>
+</body>
+</html>
